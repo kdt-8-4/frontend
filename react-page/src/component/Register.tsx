@@ -12,25 +12,37 @@ export default function Register() {
         <p>회원가입</p>
         <form>
           {/* 이메일 👉🏻 이메일 형식 유효성 검사*/}
-          <label htmlFor="email">이메일</label>
-          <div>
-            <input type="email" id="email" />
-            <button id="btn_verify">인증</button>
+          <div id="div_email">
+            <label htmlFor="email">이메일</label>
+            <div>
+              <input type="email" id="email" />
+              <button id="btn_verify">인증</button>
+            </div>
           </div>
           {/* 이름*/}
-          <label htmlFor="name">이름</label>
-          <input type="text" id="name" />
+          <div>
+            <label htmlFor="name">이름</label>
+            <input type="text" id="name" />
+          </div>
           {/* 닉네임 👉🏻 중복검사*/}
-          <label htmlFor="nickname">닉네임</label>
-          <input type="text" id="nickname" />
+          <div>
+            <label htmlFor="nickname">닉네임</label>
+            <input type="text" id="nickname" />
+          </div>
           {/* 비밀번호 👉🏻 중복검사 & 유효성 검사*/}
-          <label htmlFor="password">비밀번호</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="비밀번호(8~20자 영문, 숫자, 특수기호 조합)"
-          />
-          <input type="password" id="re-password" placeholder="비밀번호 확인" />
+          <div>
+            <label htmlFor="password">비밀번호</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="비밀번호(8~20자 영문, 숫자, 특수기호 조합)"
+            />
+            <input
+              type="password"
+              id="re-password"
+              placeholder="비밀번호 확인"
+            />
+          </div>
           <button id="btn_register">옷늘 캐스터 등록</button>
         </form>
       </section>

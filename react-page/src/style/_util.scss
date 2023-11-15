@@ -1,3 +1,5 @@
+@import "_font.scss";
+
 $color-main: #a8bbff;
 $color-sub: #d0dbff;
 $color-register: #7995f9;
@@ -6,13 +8,32 @@ $color-register: #7995f9;
   color: $color-main;
   width: $width;
   height: $height;
+  cursor: pointer;
 }
 
 @mixin register($size) {
   color: $color-register;
   text-align: center;
   font-size: $size;
-  font-weight: 800;
   line-height: normal;
   letter-spacing: 3px;
+}
+
+@mixin btn($width, $height, $font) {
+  // 버튼 글자
+  color: #fff;
+  text-align: center;
+  font-family: "EASTARJET-Medium";
+  font-weight: 700;
+  font-size: $font;
+  line-height: normal;
+  letter-spacing: 2px;
+  // 버튼 윤곽(?)
+  width: $width;
+  height: $height;
+  flex-shrink: 0;
+  background-color: $color-main;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
