@@ -68,7 +68,7 @@ jobs:
           key : ${{ secrets.EC2_PEMKEY }}          #인스턴스 생성 시 발급받은 키페어(아래에 pem파일로 변환하는 방법 링크)
           port : 22
           script : |                                     #서버 셸스크립트 명령어 실행
-            echo "${{ secrets.FOR_NGINX_DEFAULT_CONF }}" | base64 --decode > /home/ubuntu/nginx/default.conf
+            echo "${{ secrets.FOR_NGINX_DEFAULT_CONF }}" | base64 --decode > /home/ubuntu/conf/conf.d/default.conf
             sudo docker stop $(sudo docker ps -a -q)     #실행중인 컨테이너 중지
             sudo docker rm $(sudo docker ps -a -q)       # 삭제
             sudo docker pull dongdung507/front_service      # 도커허브에서 이미지 최신버전 가져오기
