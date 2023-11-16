@@ -6,8 +6,8 @@ export default function Register() {
     <div id="container">
       <div id="x-div">
         <CloseIcon id="x" />
+        <hr />
       </div>
-      <hr />
       <section id="main">
         <p>회원가입</p>
         <form>
@@ -43,10 +43,13 @@ export default function Register() {
               placeholder="비밀번호 확인"
             />
           </div>
+          {/* <br />
+          <br />
+          <br /> */}
           <button id="btn_register">옷늘 캐스터 등록</button>
         </form>
       </section>
-      <footer></footer>
+      <footer>옷늘날씨</footer>
     </div>
   );
 }

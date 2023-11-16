@@ -6,9 +6,13 @@
   height: 100%;
   font-family: "EASTARJET-Medium";
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #x-div {
   text-align: right;
+  padding: 10px 10px 0px 10px;
 }
 hr {
   height: 1px;
@@ -25,9 +29,9 @@ form {
   display: flex;
   flex-direction: column;
   width: 65vw;
-  height: 65vh;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
 
   div {
     display: flex;
@@ -68,6 +72,7 @@ input {
 
   &::placeholder {
     color: #ababaa;
+    font-size: 11px;
   }
   //TODO 작성 다 되면 (값 생기면) 하얀색으로 바뀌는 디자인 필요
   &:focus {
@@ -75,11 +80,18 @@ input {
   }
 }
 
+#btn_register {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 5vh;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
 // 모바일
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  #x-div {
-    padding: 10px 10px 0px 0px;
-  }
   #x {
     @include x-icon(18px, 18px); // 가로, 세로
   }
@@ -93,15 +105,11 @@ input {
 
   #btn_register {
     @include btn(147px, 35px, 15px); // 가로, 세로, 폰트 사이즈
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
 // 태블릿 ~ 데스크탑
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #x-div {
-    padding: 10px 10px 0px 0px;
-  }
   #x {
     @include x-icon(26px, 26px); // 가로, 세로
   }
@@ -117,15 +125,11 @@ input {
 
   #btn_register {
     @include btn(147px, 35px, 15px); // 가로, 세로, 폰트 사이즈
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
 // 데스크탑 ~
 @media only screen and (min-width: 1024px) {
-  #x-div {
-    padding-top: 10px;
-  }
   #x {
     @include x-icon(30px, 30px); // 가로, 세로
   }
@@ -141,6 +145,5 @@ input {
 
   #btn_register {
     @include btn(147px, 35px, 15px); // 가로, 세로, 폰트 사이즈
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }

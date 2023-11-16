@@ -17,6 +17,7 @@ $color-register: #7995f9;
   font-size: $size;
   line-height: normal;
   letter-spacing: 3px;
+  margin-top: 0;
 }
 
 @mixin btn($width, $height, $font) {
