@@ -1,9 +1,11 @@
-import Register from "component/Register";
+import InputSearch from "component/InputSearch";
+import WeatherBar from "component/WeatherBar";
 
 function App() {
   return (
     <>
-      <Register />
+      <InputSearch />
+      <WeatherBar />
     </>
   );
 }

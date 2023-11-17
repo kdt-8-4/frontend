@@ -38,3 +38,14 @@ $color-register: #7995f9;
   border-radius: 10px;
   cursor: pointer;
 }
+
+@mixin weatherbar($width, $height, $fontsize) {
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "EASTARJET-Medium";
+  font-weight: 500;
+  font-size: $fontsize;
+}
