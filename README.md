@@ -61,14 +61,14 @@ docker --version
 
 New Access Token으로 Token 생성, 생성된 키값 복사, 따로 기록해두어야 합니다.(중요)
 
-<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/9834cdce-d7c7-423e-9b1f-102d00c0006f" width="200" />
+<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/9834cdce-d7c7-423e-9b1f-102d00c0006f" width="400" />
 
 
  **- EC2의 인증키 pem파일로 변경 후 시크릿 값에 넣기**
 
 pem키를 저장할때 일단 ppk로 받아온 키를 Putty Zen에서 가져오고 
 
-![image](https://github.com/kdt-8-4/react_CICD/assets/114459629/a14e098f-6434-4111-b561-2dfce60efc11){: width="100" height="100"}
+<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/a14e098f-6434-4111-b561-2dfce60efc11" width="400" />
 
 이렇게 클릭하여 pem으로 저장한 후에 메모장으로 열어서 그 모두를 복붙해 시크릿 값으로 저장하면 됩니다.
 
@@ -92,7 +92,8 @@ pem키를 저장할때 일단 ppk로 받아온 키를 Putty Zen에서 가져오�
     - .dockerignore
     - Dockerfile
 
-![image](https://github.com/kdt-8-4/react_CICD/assets/114459629/c9f1e9ce-4a2f-46b8-98fc-227d8fba830a){: width="100" height="100"}
+
+<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/c9f1e9ce-4a2f-46b8-98fc-227d8fba830a" width="400" />
 
 
 workflows_front 파일
