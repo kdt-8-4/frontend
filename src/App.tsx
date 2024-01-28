@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <p>dddd</p>
+      <p>CI/CD 구축 완료</p>
     </div>
   );
 }

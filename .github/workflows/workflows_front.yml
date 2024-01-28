@@ -1,4 +1,4 @@
-name: Java CI with Gradle   #수행할 Acti#수행결과 확인할때 헷갈리지 않게 서비스명 적읍시다
+name: CI   #수행할 Acti#수행결과 확인할때 헷갈리지 않게 서비스명 적읍시다
 on:
   push:
        
@@ -40,13 +40,6 @@ jobs:
   
       - name: Build
         run: npm run build
-
-
-      # - name : permission for gradlew    #빌드 전 권한 부여
-      #   run : chmod +x gradlew    
-
-      # - name: Build with Gradle          #프로젝트 빌드
-      #   run : ./gradlew clean build --exclude-task test
 
       - name : 도커 이미지 빌드
         run : docker build -t dongdung507/front_service .     #도커허브아이디/서비스명으로 정의
