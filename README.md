@@ -93,7 +93,7 @@ pem키를 저장할때 일단 ppk로 받아온 키를 Putty Zen에서 가져오�
     - Dockerfile
 
 
-<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/c9f1e9ce-4a2f-46b8-98fc-227d8fba830a" width="400" />
+<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/c9f1e9ce-4a2f-46b8-98fc-227d8fba830a" width="200" />
 
 
 workflows_front 파일
