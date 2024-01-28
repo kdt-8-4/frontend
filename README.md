@@ -6,9 +6,9 @@
 
 자세한 사항을 설명하자면
 
-1. EC2를 만들고 Putty로 열어서 도커 사용환경을 구축해준다.
-2. 그 다음에 최상단에 깃액션 파일(.github/workflows/파일이름.yml)을 만들어주고, Dockerfile과 dockerignore를 만든다.
-3.  Node.js 위에서 실행시켜주기 위해 만드는 conf/conf.d/default.conf 파일과 필요한 시크릿 값들을 생성한 뒤 레포지토리에 push를 하면 자동으로 서버에 배포된다.
+1. EC2를 만들고 Putty로 열어서 도커 사용환경을 구축
+2. 그 다음에 최상단에 깃액션 파일(.github/workflows/파일이름.yml)을 만들어주고, Dockerfile과 dockerignore를 만듦
+3.  Node.js 위에서 실행시켜주기 위해 만드는 conf/conf.d/default.conf 파일과 필요한 시크릿 값들을 생성한 뒤 레포지토리에 push를 하면 자동으로 서버에 배포됨
 
 - **EC2 인스턴스 제작 후 Docker 사용 환경 구축**
 
@@ -51,7 +51,7 @@ docker --version
 
 - **레포지토리에 시크릿값 설정해주기**
 
-환경 설정 파일과 workflows에서 가져오는 키값을 레포지토리에서 설정해주어야한다.
+환경 설정 파일과 workflows에서 가져오는 키값을 레포지토리에서 설정해주어야합니다.
 
  **- Docker의 아이디와 토큰 시크릿 값에 넣기**
 
@@ -59,7 +59,7 @@ docker --version
 
 왼쪽 목록 중 Security 클릭
 
-New Access Token으로 Token 생성, 생성된 키값 복사, 따로 기록해두기(중요)
+New Access Token으로 Token 생성, 생성된 키값 복사, 따로 기록해두어야 합니다.(중요)
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/80df9d36-8c02-491a-84fb-86f8ae31f9a2/cb0a6930-268c-4077-b900-25e34c5ba09a/Untitled.png)
 
@@ -69,11 +69,11 @@ pem키를 저장할때 일단 ppk로 받아온 키를 Putty Zen에서 가져오�
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/80df9d36-8c02-491a-84fb-86f8ae31f9a2/6f198519-96fe-4d70-ba7c-feccbd7e322d/Untitled.png)
 
-이렇게 클릭하여 pem으로 저장한 후에 메모장으로 열어서 그 모두를 복붙해 시크릿 값으로 저장해 놓으면된다.
+이렇게 클릭하여 pem으로 저장한 후에 메모장으로 열어서 그 모두를 복붙해 시크릿 값으로 저장하면 됩니다.
 
  **- Nginx를 실행해주는 default.conf도 시크릿 값에 올려주기** 
 
-아래에서 코드 작성되어 있다.
+아래에 작성해 놓았습니다.
 
 - **CI/CD 구축 시작**
     
