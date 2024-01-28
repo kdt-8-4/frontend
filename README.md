@@ -61,7 +61,7 @@ docker --version
 
 New Access Token으로 Token 생성, 생성된 키값 복사, 따로 기록해두어야 합니다.(중요)
 
-![image](https://github.com/kdt-8-4/react_CICD/assets/114459629/9834cdce-d7c7-423e-9b1f-102d00c0006f){: width="100" height="100"}
+<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/9834cdce-d7c7-423e-9b1f-102d00c0006f" width="200" />
 
 
  **- EC2의 인증키 pem파일로 변경 후 시크릿 값에 넣기**
