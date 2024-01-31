@@ -1,6 +1,6 @@
 # React CI/CD 구축 과정
 
-*※인스턴스는 비용 문제로 닫아둔 상태입니다.※*
+
 
 **배포 과정** : commit & push → git action 실행 → 프로젝트 빌드 → 도커 이미지 생성 → 도커 허브 로그인 → 도커 이미지 퍼블리싱 → ec2 원격 접속 → shell 명령어로 docker 이미지 pull 후 run
 
