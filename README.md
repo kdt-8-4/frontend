@@ -60,7 +60,6 @@ docker --version
 왼쪽 목록 중 Security 클릭
 
 New Access Token으로 Token 생성, 생성된 키값 복사, 따로 기록해두어야 합니다.(중요)
-<img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/e2240d9d-3608-4820-a376-0e0ee545df62" width="400" />
 
 <img src= "https://github.com/kdt-8-4/react_CICD/assets/114459629/9834cdce-d7c7-423e-9b1f-102d00c0006f" width="400" />
 
